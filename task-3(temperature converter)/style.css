@@ -1,0 +1,129 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+  }
+  
+  html {
+	font-size: 62.5%;
+	font-family: 'Roboto', sans-serif;
+  }
+  
+  body {
+	background: #b0e3ea;
+  }
+  
+  .header {
+	position: relative;
+	height: 40vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+  }
+  
+  .logo_img {
+	width: 7rem;
+	border-radius: 1rem;
+	transition: all 0.2s;
+  }
+  
+  .logo_img:hover {
+	cursor: pointer;
+	transform: translateY(-.2rem);
+  }
+  
+  .heading {
+	position: absolute;
+	left: 50%;
+	top: 70%; /* Adjust the percentage value to move the heading down */
+	transform: translate(-50%, -50%);
+  }
+  
+  
+  h1 {
+	color: #FF5733; 
+	text-align: center;
+	text-shadow: 0px 10px 5px rgba(255,0,0,0.5);
+	font-family: 'Roboto', sans-serif;
+	font-size: 3.3125rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 139%;
+	letter-spacing: 0.47438rem;
+	text-transform: uppercase;
+  }
+  
+  
+  .main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 2rem;
+  }
+  
+  .reading {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+	position: relative; 
+  }
+  
+  .temp {
+	outline: none;
+	border: 2px solid #FF5733; /* Change the border color to your desired color (e.g., orange) */
+	border-radius: 1rem; /* Adjust the border-radius to change the shape of the input box */
+	font-size: 1.8rem;
+	text-align: center;
+	color: #262424;
+	background: #F3F0F0; /* Change the background color to your desired color */
+	padding: 0.8rem 1rem; /* Adjust the padding to control the input box size */
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+	font-weight: 600;
+	width: 20rem;
+	height: 5rem;
+  }
+  
+  
+  .readings input {
+	font-size: 1.8rem;
+	font-weight: 400;
+	text-align: center;
+	color: #615A5A;
+  }
+  
+  span {
+	position: absolute;
+	top: 41.5%;
+	margin-left: -5rem;
+	font-size: 2rem;
+	font-weight: 500;
+	color: #262424;
+  }
+  
+  #progress-bar {
+	position: absolute;
+	left: 43%;
+	top: 55%;
+	height: 2rem;
+	max-width: 50rem;
+	width: 0;
+	background: rgba(244, 59, 59, 0.98);
+	border-radius: 5rem;
+	transition: width 0.8s ease-in-out;
+  }
+  
+  .statuss {
+	position: absolute;
+	top: 60.5%;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 2rem;
+	font-weight: 400;
+	color: #262424;
+	font-weight: 400;
+	text-transform: uppercase;
+  }
+  
